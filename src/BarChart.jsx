@@ -22,11 +22,11 @@ class BarChart extends Component {
             .data(data)
             .enter()
             .append('rect')
-            .attr('x', (d, i) => i * 70)
-            .attr('y', (d, i) => 10 * d)
+            .attr('x', (d, i) => i * 45)
+            .attr('y', (d, i) => 300 - 10 * d)
             .attr('width', 25)
             .attr('height', (d, i) => d * 10)
-            .attr('fill', 'green');
+            .attr('fill', 'purple')
     }
 
     render() {
